@@ -21,28 +21,28 @@ class MainActivity : AppCompatActivity() {
 
         myWisataView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
-                // Beralih ke aktivitas peta
+                // Pindah ke Maps Wisata
                 startActivity(Intent(this@MainActivity, MapsWisata::class.java))
             }
         })
 
         myKulinerView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
-                // Beralih ke aktivitas peta
+                //Pindah ke Maps Kuliner
                 startActivity(Intent(this@MainActivity, MapsKuliner::class.java))
             }
         })
 
         myHalteView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
-                // Beralih ke aktivitas peta
+                //Pindah ke Maps Halte
                 startActivity(Intent(this@MainActivity, MapsHalte::class.java))
             }
         })
 
         myOlehView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
-                // Beralih ke aktivitas peta
+                //Pindah ke Maps Oleh Oleh
                 startActivity(Intent(this@MainActivity, MapsOleh::class.java))
             }
         })

@@ -24,7 +24,7 @@ class MapsWisata : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        // Tambahkan marker untuk 10 tempat wisata di Jogja
+        // Marker Tempat Wisata Jogja
         addMarker(LatLng(-7.7956, 110.3695), "Tugu Yogyakarta")
         addMarker(LatLng(-7.7755, 110.3749), "Malioboro Street")
         addMarker(LatLng(-7.7548, 110.4316), "Prambanan Temple")

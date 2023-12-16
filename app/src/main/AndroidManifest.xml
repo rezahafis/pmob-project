@@ -19,9 +19,6 @@
             android:name=".MapsHalte"
             android:exported="false" />
         <activity
-            android:name=".HalteMaps"
-            android:exported="false" />
-        <activity
             android:name=".MapsKuliner"
             android:exported="false" />
         <activity
