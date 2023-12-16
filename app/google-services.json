@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1082413647388",
+    "project_id": "pmobreza",
+    "storage_bucket": "pmobreza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082413647388:android:2022240da982011678c1d9",
+        "android_client_info": {
+          "package_name": "com.example.rezapmob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDge-g-f57QcNq9STp7sp8j9urzbMQpVcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
