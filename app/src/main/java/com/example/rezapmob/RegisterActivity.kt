@@ -28,32 +28,47 @@ class RegisterActivity : AppCompatActivity() {
         binding.btnRegister.setOnClickListener {
             val email = binding.edtEmailRegister.text.toString()
             val password = binding.edtPasswordRegister.text.toString()
+            val confirmPassword = binding.edtConfPasswordRegister.text.toString()
 
-            //Validasi email
+            // Validasi email
             if (email.isEmpty()) {
                 binding.edtEmailRegister.error = "Email Harus Diisi"
                 binding.edtEmailRegister.requestFocus()
                 return@setOnClickListener
             }
 
-            //Validasi email tidak sesuai
+            // Validasi email tidak sesuai
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 binding.edtEmailRegister.error = "Email Tidak Valid"
                 binding.edtEmailRegister.requestFocus()
                 return@setOnClickListener
             }
 
-            //Validasi password
+            // Validasi password
             if (password.isEmpty()) {
                 binding.edtPasswordRegister.error = "Password Harus Diisi"
                 binding.edtPasswordRegister.requestFocus()
                 return@setOnClickListener
             }
 
-            //Validasi panjang password
+            // Validasi panjang password
             if (password.length < 6) {
                 binding.edtPasswordRegister.error = "Password Minimal 6 Karakter"
                 binding.edtPasswordRegister.requestFocus()
+                return@setOnClickListener
+            }
+
+            // Validasi konfirmasi password
+            if (confirmPassword.isEmpty()) {
+                binding.edtConfPasswordRegister.error = "Konfirmasi Password Harus Diisi"
+                binding.edtConfPasswordRegister.requestFocus()
+                return@setOnClickListener
+            }
+
+            // Validasi password dan konfirmasi password harus sama
+            if (password != confirmPassword) {
+                binding.edtConfPasswordRegister.error = "Password dan Konfirmasi Password Tidak Sama"
+                binding.edtConfPasswordRegister.requestFocus()
                 return@setOnClickListener
             }
 
