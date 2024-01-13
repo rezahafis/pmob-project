@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         val myWisataView: ImageView = findViewById(R.id.image_Wisata)
         val myKulinerView: ImageView = findViewById(R.id.image_Kuliner)
         val myHalteView: ImageView = findViewById(R.id.image_halte)
+        val myMusholaView: ImageView = findViewById(R.id.image_Mushola)
+        val myKampusView: ImageView = findViewById(R.id.image_Campus)
 
         myWisataView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
@@ -44,6 +46,21 @@ class MainActivity : AppCompatActivity() {
             override fun onClick(v: View) {
                 //Pindah ke Maps Oleh Oleh
                 startActivity(Intent(this@MainActivity, MapsOleh::class.java))
+            }
+        })
+
+        myMusholaView.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View) {
+                //Pindah ke Maps Mushola
+                startActivity(Intent(this@MainActivity, MapsMushola::class.java))
+            }
+        })
+
+
+        myKampusView.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View) {
+                //Pindah ke Maps Kampus
+                startActivity(Intent(this@MainActivity, MapsKampusActivity::class.java))
             }
         })
     }
